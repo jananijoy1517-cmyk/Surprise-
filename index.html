@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>For You 💙</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Floating Hearts -->
+    <div class="hearts"></div>
+
+
+    <!-- INTRO -->
+    <section class="intro" id="intro">
+
+        <div class="intro-content">
+
+            <p class="small-text">A little something from my heart</p>
+
+            <h1>
+                I don't need<br>
+                <span>a reason to love you.</span>
+            </h1>
+
+            <p class="intro-sub">
+                I just do.<br>
+                And somehow, that feels enough.
+            </p>
+
+            <button class="enter-btn" onclick="enterWebsite()">
+                ENTER ♡
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- MAIN WEBSITE -->
+    <main id="mainWebsite">
+
+
+        <!-- HERO -->
+        <section class="hero">
+
+            <p class="eyebrow">03 • 10 • 2026</p>
+
+            <h2>
+                <br>
+                <span>Happy Boyfriend's
+                Day🩵</span>
+            </h2>
+
+            <p class="hero-text">
+                And I'm still grateful<br>
+                that I found you.
+            </p>
+
+            <div class="scroll">
+                ↓
+                <span>keep going</span>
+            </div>
+
+        </section>
+
+
+        <!-- BEFORE / AFTER -->
+        <section class="before-after">
+
+            <p class="section-label">SOMETHING I REALIZED</p>
+
+            <h2>
+                You don't have to<br>
+                <span>do anything.</span>
+            </h2>
+
+            <div class="story-card">
+
+                <div class="story-side">
+
+                    <span>THEN</span>
+
+                    <p>
+                        I thought love needed
+                        a reason.
+                    </p>
+
+                </div>
+
+                <div class="story-line">♡</div>
+
+                <div class="story-side after">
+
+                    <span>NOW</span>
+
+                    <p>
+                        Then you came along,
+                        and I just loved you.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+        <!-- OUR LITTLE MOMENTS -->
+<section class="memories">
+
+    <p class="section-label">OUR LITTLE MOMENTS</p>
+
+    <h2>
+        Some moments<br>
+        <span>I'd choose again.</span>
+    </h2>
+
+    <div class="photo-gallery">
+
+        <div class="photo-card">
+            <img src="images/photo1.jpg" alt="Our memory">
+            <div class="photo-caption">
+                <span>01</span>
+                <p>One of my favourite memories with you.</p>
+            </div>
+        </div>
+
+        <div class="photo-card">
+            <img src="images/photo2.jpg" alt="Our memory">
+            <div class="photo-caption">
+                <span>02</span>
+                <p>A moment I wish I could keep forever.</p>
+            </div>
+        </div>
+
+        <div class="photo-card">
+            <img src="images/photo3.jpg" alt="Our memory">
+            <div class="photo-caption">
+                <span>03</span>
+                <p>Just us. And that's enough.</p>
+            </div>
+        </div>
+
+       
+        </div>
+
+    </div>
+
+</section>
+<!-- OUR SONG -->
+<section class="our-song">
+
+    <div class="song-content">
+
+        <p class="section-label">A SONG THAT REMINDS ME OF YOU</p>
+
+        <h2>
+            Press play.<br>
+            <span>This one's for us.</span>
+        </h2>
+
+        <div class="music-player">
+
+            <div class="vinyl" id="vinyl">
+                ♫
+            </div>
+
+            <div class="song-info">
+                <p class="song-title">Our Song</p>
+                <p class="song-subtitle">Just a little piece of us 💙</p>
+            </div>
+
+            <button
+                class="play-btn"
+                id="playBtn"
+                onclick="toggleMusic()">
+                ▶
+            </button>
+
+        </div>
+
+        <audio id="ourSong" loop>
+            <source src="music/oursong.mp3" type="audio/mpeg">
+        </audio>
+
+    </div>
+
+</section>
+
+        <!-- REASONS -->
+        <section class="reasons">
+
+            <p class="section-label">THINGS I DON'T SAY ENOUGH</p>
+
+            <h2>
+                Just a few things<br>
+                <span>from my heart.</span>
+            </h2>
+
+            <div class="reason-card" id="reasonCard">
+
+                <div class="number" id="reasonNumber">
+                    01
+                </div>
+
+                <p id="reasonText">
+                    You don't have to do
+                    something special for me
+                    to love you.
+                </p>
+
+                <button onclick="nextReason()">
+                    NEXT →
+                </button>
+
+            </div>
+
+        </section>
+        <!-- THINGS I LOVE ABOUT YOU -->
+<section class="love-things">
+
+    <div class="love-things-content">
+
+        <p class="section-label">THINGS I LOVE ABOUT YOU</p>
+
+        <h2>
+            It's not just<br>
+            <span>one thing.</span>
+        </h2>
+
+        <p class="love-intro">
+            It's all the little things<br>
+            that make you, you. 💙
+        </p>
+
+        <div class="love-cards">
+
+            <div class="love-card">
+                <span>01</span>
+                <h3>The way you understand me.</h3>
+                <p>
+                    Even when I don't say everything,
+                    somehow you understand what I mean.
+                </p>
+            </div>
+
+            <div class="love-card">
+                <span>02</span>
+                <h3>The little things you do.</h3>
+                <p>
+                    Maybe they seem small to you,
+                    but I notice them more than you know.
+                </p>
+            </div>
+
+            <div class="love-card">
+                <span>03</span>
+                <h3>How comfortable I feel with you.</h3>
+                <p>
+                    With you, I never have to pretend
+                    to be someone I'm not.
+                </p>
+            </div>
+
+            <div class="love-card">
+                <span>04</span>
+                <h3>The way you became my person.</h3>
+                <p>
+                    Somewhere along the way,
+                    you became the person I look for in everything.
+                </p>
+            </div>
+
+            <div class="love-card">
+                <span>05</span>
+                <h3>You make ordinary days special.</h3>
+                <p>
+                    I don't need big moments.
+                    Having you is already enough.
+                </p>
+            </div>
+
+            <div class="love-card">
+                <span>06</span>
+                <h3>Simply... you.</h3>
+                <p>
+                    Out of everyone in this world,
+                    I'm just grateful that it's you.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- HIS NAME -->
+<section class="his-name">
+
+    <div class="name-content">
+
+        <p class="section-label">AND YES...</p>
+
+        <h2>
+            There's one name<br>
+            <span>my heart knows.</span>
+        </h2>
+
+        <div class="name-reveal">
+            <p class="name-label">MY PERSON</p>
+
+            <h3 id="boyfriendName">
+                JESKIN ALFRED 
+            </h3>
+
+            <div class="name-line"></div>
+
+            <p class="name-message">
+                The name I want to keep choosing,
+                in every chapter of my life.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+<!-- SINCE YOU -->
+<section class="since-you">
+
+    <div class="counter-content">
+
+        <p class="section-label">SINCE YOU</p>
+
+        <h2>
+            Look how far<br>
+            <span>we've come.</span>
+        </h2>
+
+        <p class="counter-intro">
+            And somehow, I still want<br>
+            every tomorrow with you.
+        </p>
+
+        <div class="counter-box">
+
+            <div class="counter-item">
+                <strong id="years">0</strong>
+                <span>YEARS</span>
+            </div>
+
+            <div class="counter-item">
+                <strong id="months">0</strong>
+                <span>MONTHS</span>
+            </div>
+
+            <div class="counter-item">
+                <strong id="days">0</strong>
+                <span>DAYS</span>
+            </div>
+
+        </div>
+
+        <p class="counter-bottom">
+            And I'm still choosing you. 💙
+        </p>
+
+    </div>
+
+</section>
+<!-- SECRET MESSAGE -->
+<section class="secret-message">
+
+    <div class="secret-content">
+
+        <p class="section-label">JUST BETWEEN US</p>
+
+        <h2>
+            There's something<br>
+            <span>I never say enough.</span>
+        </h2>
+
+        <p class="secret-intro">
+            This one isn't for anyone else.
+            It's only for you.
+        </p>
+
+        <div class="unlock-area">
+
+            <button
+                class="hold-btn"
+                id="holdBtn"
+                onmousedown="startHold()"
+                onmouseup="stopHold()"
+                ontouchstart="startHold()"
+                ontouchend="stopHold()">
+
+                <span id="holdText">HOLD TO UNLOCK</span>
+
+                <div class="hold-progress" id="holdProgress"></div>
+
+            </button>
+
+        </div>
+
+        <div class="hidden-message" id="hiddenMessage">
+
+    <p class="unlock-reveal">
+        You found something<br>
+        that was only meant for you... ♡
+    </p>
+
+    <p>
+        I don't know what the future has
+        planned for us...
+    </p>
+            <p>
+                But if I get to choose,
+                I want to keep choosing you.
+            </p>
+
+            <p class="secret-love">
+                I hope one day,
+                the person I call my boyfriend today
+                becomes the person I call my husband. 💙
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+        <!-- FUTURE -->
+        <section class="question">
+
+            <p class="section-label">A LITTLE SECRET</p>
+
+            <h2>
+                When I imagine<br>
+                my future...
+            </h2>
+
+            <p class="choose-text">
+                Somehow,<br>
+                <span>I always see you in it.</span>
+            </p>
+
+            <button class="unlock-btn" onclick="openSurprise()">
+                THERE'S SOMETHING I WANT YOU TO READ ♡
+            </button>
+
+        </section>
+
+
+        <!-- FINAL -->
+        <section class="final" id="final">
+
+            <div class="final-content">
+
+                <p class="section-label">
+                    FOR THE PERSON I CHOOSE
+                </p>
+
+                <h2>
+                    Happy<br>
+                    <span>Boyfriend's Day 💙</span>
+                </h2>
+
+                <div class="letter">
+
+                    <p>
+                        My love,
+                    </p>
+
+                    <p>
+                        You don't have to do something
+                        special for me to love you.
+                        You don't have to be perfect.
+                        Just being you has always been
+                        enough for me.
+                    </p>
+
+                    <p>
+                        No matter what you do or don't do,
+                        somehow, I still find myself
+                        choosing you.
+                    </p>
+
+                    <p>
+                        I don't know exactly what our
+                        future will look like...
+                        but whenever I imagine mine,
+                        I keep seeing you in it.
+                    </p>
+
+                    <p>
+                        Not just as the person I love today,
+                        but as the person I hope I get to
+                        call my husband someday.
+                    </p>
+
+                    <p>
+                        I only have one little wish —
+                        I hope the love you have for me
+                        never becomes less.
+                    </p>
+
+                    <p>
+                        I don't want a love that is only
+                        beautiful for a moment.
+                        I want the kind of love that keeps
+                        choosing each other, again and again.
+                    </p>
+
+                    <p>
+                        And if life gives me the chance
+                        to choose my person all over again...
+                    </p>
+
+                    <p class="love">
+                        I'll still choose you. 💙
+                    </p>
+
+                </div>
+
+                <p class="ending">
+                    Today. Tomorrow.<br>
+                    And hopefully, as my husband someday. ♡
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
